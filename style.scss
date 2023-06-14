@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #262626;
+}
+a{
+    text-decoration: none;
+}
+
+/* parte do css grid p/ fazer a divisão*/
+.conteiner{
+    width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 21.875rem;
+    column-gap: 1.25rem;
+    margin: 1.875rem auto 55px;
+}
+/* Celular*/
+.phone{
+    height: 38.625rem;
+    background: url('img/instagram.png') no-repeat center;
+}
+/* Formulariopara alinhamento*/
+.form{    
+    text-align: center;
+    margin-top: 1.625rem;
+    /* formulario contendo input, links, butão alinhamentos*/
+    form{
+
+        margin-bottom: 0.625rem;
+        background-color: #FFFFFF;
+        padding: 1.25rem 2.5rem;
+        border: 1px solid rgb(219, 219, 219);
+        
+        .logo{
+            width: 175px;
+            height: 51px;
+            margin: 20px 0;
+        }
+        input{
+            font-size: 11px;
+            color: #262626;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #FAFAFA;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 6px;
+            padding: 8 0.5rem;
+            height: 2.25rem;
+            border-radius: 3px;
+        }
+        button{
+            width: 100%;
+            background-color: #B2DFFC;
+            border: none;
+            border-radius: 3px;
+            color: #FFFFFF;
+            padding: 8 0.5rem;
+            height: 1.875rem;
+            margin: 0.625rem 0;
+            font-weight: bold;
+        }
+        .space{
+            color: #8b8b8b;
+            text-transform: uppercase;
+            margin: 1rem 0 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &::before,
+            &::after{
+                content: '';
+                width: 106px;
+                height: 1px;
+                background-color: #dbdbdb;
+                display: block;
+            }
+        }
+        .login-facebook{
+            color: rgb(56, 81, 133);
+            font-weight: bold;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 1.125rem;
+        }
+        i{
+            margin-right: 3px;
+        }
+        .change-password{
+            color: rgb(56, 81, 133);
+            font-size: 13px;
+        }
+    }
+}
+/* segunda parte do form*/
+.sing-up{
+    background-color: #FFFFFF;
+    padding: 10px 0px;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: .875rem;
+    margin-bottom: .625rem;
+    a{
+        color: rgb(0, 149, 246);
+        font-weight: bold;
+    }
+}
+/* parte que contem as imagens para baixar o app*/
+.get-app{
+    font-size: 14px;
+    span{
+        margin: 10px 20px;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    img{
+        display: flex;
+        display: inline-block;
+        height: 2.5rem;
+        width: 8.5rem;
+    }
+}
+/* Parte final do rodapé, contendo links*/ 
+.footer{
+    width: 61.25rem;
+    margin: 0 auto 60px;
+    text-align: center;
+    .links{
+        margin-bottom: 0.625rem;
+        a{
+            font-size: 12px;
+            margin: 0 0.375rem;
+            color: rgb(142, 142, 142);
+        }           
+    }
+    /* copywriting  da pagina*/
+    .copy{
+        font-size: 0.75rem;
+        margin: 0 .375rem;
+        color: rgb(142, 142, 142);
+        margin-top: 0.9375rem;
+        span{
+            margin: 10px;
+            i{
+                margin-left: 5px;
+            }
+        }
+    }
+}
